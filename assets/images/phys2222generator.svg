@@ -1,0 +1,399 @@
+<svg version="1.1"
+     viewBox="-3, -3, 1000, 703"
+     xmlns="http://www.w3.org/2000/svg">
+
+
+     <!-- LOB stickers -->
+     <polygon points="0,400 100,400, 100,500" class="all OLDB" />
+     <polygon points="0,400 100,500, 0,500" class="all LDBO" />
+     <polygon points="0,400 100,400, 100,300" class="all OLUB" />
+     <polygon points="0,400 100,300, 0,300" class="all LUBO" />
+     <!-- LOF stickers -->
+     <polygon points="100,300 200,300, 200,400" class="all LUFO" />
+     <polygon points="100,400 100,300, 200,400" class="all OFUL" />
+     <polygon points="100,400 100,500, 200,400" class="all OFDL" />
+     <polygon points="100,500 200,400, 200,500" class="all LDFO" />
+
+     <!-- FLO stickers -->
+     <polygon points="200,400 300,400, 300,500" class="all FLDO" />
+     <polygon points="200,400 300,500, 200,500" class="all LDFO2" />
+     <polygon points="200,400 300,400, 300,300" class="all FLUO" />
+     <polygon points="200,400 300,300, 200,300" class="all LUFO2" />
+     <!-- FLI stickers -->
+     <polygon points="300,300 400,300, 400,400" class="all LUFI" />
+     <polygon points="300,400 300,300, 400,400" class="all FULI" />
+     <polygon points="300,400 300,500, 400,400" class="all FDLI" />
+     <polygon points="300,500 400,400, 400,500" class="all LDFI" />
+
+
+     <!-- LDO stickers -->
+     <polygon points="200,600 300,600, 300,700" class="all DLBO" />
+     <polygon points="200,600 300,700, 200,700" class="all LDBO2" />
+     <polygon points="200,600 300,600, 300,500" class="all DLFO" />
+     <polygon points="200,600 300,500, 200,500" class="all LDFO3" />
+     <!-- LDI stickers -->
+     <polygon points="300,500 400,500, 400,600" class="all LDFI2" />
+     <polygon points="300,600 300,500, 400,600" class="all DLFI" />
+     <polygon points="300,600 300,700, 400,600" class="all DLBI" />
+     <polygon points="300,700 400,600, 400,700" class="all LDBI" />
+
+     <!-- ILF stickers (slanted) -->
+     <polygon points="400,400 400,300, 450,250" class="all LIFU" />
+     <polygon points="400,400 450,350, 450,250" class="all ILFU" />
+     <polygon points="400,400 450,350, 450,450" class="all ILFD" />
+     <polygon points="400,500 400,400, 450,450" class="all LFID" />
+
+     <!-- ILB stickers (slanted) -->
+     <polygon points="500,300 450,350, 450,250" class="all ILUB" />
+     <polygon points="500,300 500,200, 450,250" class="all LUBI" />
+     <polygon points="500,300 450,450, 450,350" class="all ILDB" />
+     <polygon points="500,300 450,450, 500,400" class="all LDBI2" />
+
+     <!-- ULO stickers (slanted) -->
+     <polygon points="250,250 300,300, 200,300" class="all LUFO3" />
+     <polygon points="250,250 300,300, 350,250" class="all UFOL" />
+     <polygon points="250,250 400,200, 350,250" class="all UBOL" />
+     <polygon points="250,250 400,200, 300,200" class="all LUBO2" />
+
+     <!-- ULI stickers (slanted) -->
+     <polygon points="300,300 400,300 450,250"  class="all LUFI2" />
+     <polygon points="300,300 350,250 450,250"  class="all ULFI" />
+     <polygon points="400,200 350,250 450,250"  class="all ULBI" />
+     <polygon points="400,200 500,200 450,250"  class="all LUBI2" />
+
+     <!-- BLO stickers -->
+     <polygon points="300,100 400,100, 400,200"  class="all BLUO" />
+     <polygon points="300,100 400,200, 300,200"  class="all LUBO3" />
+     <polygon points="300,100 400,100, 400,0"    class="all BLDO" />
+     <polygon points="300,100 400,0,   300,0"    class="all LDBO3" />
+
+     <!-- BLI stickers-->
+     <polygon points="400,0 500,0, 500,100"      class="all LDBI3" />
+     <polygon points="400,100 400,0, 500,100"    class="all BLDI" />
+     <polygon points="400,100 400,200, 500,100"  class="all BLUI" />
+     <polygon points="400,200 500,100, 500,200"  class="all LUBI3" />
+
+
+
+
+     <!-- Start of R stickers: -->
+
+
+
+
+     <!-- RIB stickers -->
+     <polygon points="500,300 500,200 550,250" class="all RUBI" />
+     <polygon points="500,300 550,350 550,250" class="all IRUB" />
+     <polygon points="500,300 550,450 500,400" class="all RDBI" />
+     <polygon points="500,300 550,450 550,350" class="all IRDB" />
+
+     <!-- RIF stickers -->
+     <polygon points="600,400 550,350 550,250"  class="all IRUF" />
+     <polygon points="600,400 600 300 550 250"  class="all RUFI" />
+     <polygon points="600,400 550,450 550,350"  class="all IRDF" />
+     <polygon points="600,500 550,450 600,400"  class="all RDFI" />
+
+     <!-- RFI stickers -->
+     <polygon points="600,300 600,400 700,300" class="all RUFI2" />
+     <polygon points="700,400 600,400 700,300" class="all FURI" />
+     <polygon points="700,400 600,400 700,500" class="all FDRI" />
+     <polygon points="600,500 600,400 700,500" class="all RDFI2" />
+
+     <!-- RFO stickers -->
+     <polygon points="700,300 700,400 800,400" class="all FURO" />
+     <polygon points="700,300 800,300 800,400" class="all RUFO" />
+     <polygon points="700,500 700,400 800,400" class="all FDRO" />
+     <polygon points="700,500 800,500 800,400" class="all RDFO" />
+
+     <!-- DFI stickers -->
+     <polygon points="600,500 600,600 700,500"  class="all RDFI3" />
+     <polygon points="700,600 600,600 700,500"  class="all DFRI" />
+     <polygon points="700,600 600,600 700,700"  class="all DBRI" />
+     <polygon points="600,700 600,600 700,700"  class="all RDBI2" />
+
+     <!-- DFO stickers -->
+     <polygon points="700,500 700,600 800,600"  class="all DFRO" />
+     <polygon points="700,500 800,500 800,600"  class="all RDFO2" />
+     <polygon points="700,700 700,600 800,600"  class="all DBRO" />
+     <polygon points="700,700 800,700 800,600"  class="all RDBO" />
+
+     <!-- ROF stickers -->
+     <polygon points="800,300 800,400 900,300" class="all RUFO2" />
+     <polygon points="900,400 800,400 900,300" class="all ORUF" />
+     <polygon points="900,400 800,400 900,500" class="all ORDF" />
+     <polygon points="800,500 800,400 900,500" class="all RDFO3" />
+
+     <!-- ROB stickers -->
+     <polygon points="900,300 900,400 1000,400"  class="all ORUB" />
+     <polygon points="900,300 1000,300 1000,400" class="all RUBO" />
+     <polygon points="900,500 900,400 1000,400"  class="all ORDB"/>
+     <polygon points="900,500 1000,500 1000,400" class="all RDBO2" />
+
+     <!-- BRI stickers -->
+     <polygon points="500,0 500,100 600,0"     class="all RIBD" />
+     <polygon points="600,100 500,100 600,0"   class="all BIRD" />
+     <polygon points="600,100 500,100 600,200" class="all BIRU" />
+     <polygon points="500,200 500,100 600,200" class="all RIBU" />
+
+     <!-- BRO stickers -->
+     <polygon points="600,0 600,100 700,100"   class="all BORD" />
+     <polygon points="600,0 700,0 700,100"     class="all ROBD" />
+     <polygon points="600,200 600,100 700,100" class="all BORU" />
+     <polygon points="600,200 700,200 700,100" class="all ROBU" />
+
+     <!-- URI stickers (slanted) -->
+     <polygon points="500,200 600,200 550,250" class="all RUBI2" />
+     <polygon points="600,200 550,250 650,250" class="all URIB" />
+     <polygon points="700,300 550,250 600,300" class="all RUFI3" />
+     <polygon points="700,300 550,250 650,250" class="all URIF" />
+
+    <!-- URO stickers (slanted) -->
+    <polygon points="600,200 700,200 750,250" class="all RUBO2" />
+    <polygon points="600,200 650,250 750,250" class="all URBO" />
+    <polygon points="650,250 750,250 700,300" class="all URFO" />
+    <polygon points="700,300 800,300 750,250" class="all RUFO3"  />
+
+
+    <!-- <rect x="0" y="0" width="1000" height="700" fill="white" mask="url(#puzzle)"/>
+
+
+
+    <mask id="puzzle">
+    <polygon points="0,0 0,300 200,300 300,200 300,0" fill="black"/>
+    <polygon points ="0,300 0,500 200,500 200,700 400,700 400,500 500,400 600,500 600,700 800,700 800,500 1000,500 1000,300 800 300,700,200 700,0 300,0 300,200 200,300" class="puzzle" style="fill:black;"/>
+
+    </mask> -->
+
+
+
+
+
+    <script>
+    // <![CDATA[
+        // array piece order: [LUBO LUBI LUFI LUFO LDBO LDBI LDFI LDFO], [RUBI RUBO RUFO RUFI RDBI RDBO RDFI RDFO]
+        // solved piece order: [OWBP-OWBM-OWGM-OWGP-OYBP-OYBM-OYGM-OYGP-RWBM-RWBP-RWGP-RWGM-RYBM-RYBP-RYGM-RYGP]
+        puzzleState = [[["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"]],[["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"],["grey","grey","grey","grey"]]];
+        const searchParams = new URLSearchParams(window.location.search);
+
+        // gets the puzzle state from the URL, or the solved state if the URL is plain
+        if (searchParams.has('state')) {
+            var state = searchParams.get('state');
+        } else {
+            var state = "OWBP-OWBM-OWGM-OWGP-OYBP-OYBM-OYGM-OYGP-RWBM-RWBP-RWGP-RWGM-RYBM-RYBP-RYGM-RYGP"
+        }
+
+        var stickerstodo = state.split("-");
+        //console.log(stickerstodo);
+
+
+
+        for (var i = 0;  stickerstodo.length > i; i++) {
+            for (var k = 0; k < 4; k++) {
+                if (i < 8) {
+                    puzzleState[0][i%8][k] = convert(stickerstodo[i].charAt(k));
+
+                }
+                if (i > 7) {
+                    puzzleState[1][i%8][k] = convert(stickerstodo[i].charAt(k));
+                }
+            }
+        }
+
+        function convert(letter) {
+            if (letter == "O") return "orange";
+            if (letter == "R") return "red";
+            if (letter == "B") return "blue";
+            if (letter == "G") return "green";
+            if (letter == "M") return "purple";
+            if (letter == "P") return "magenta"; // magenta looks like pink
+            if (letter == "Y") return "yellow";
+            if (letter == "W") return "white";
+            if (letter == "S") return "grey"; // S for Silver
+            else return "grey";
+        }
+
+
+        // LUBO
+        document.querySelector('.LUBO').style.fill = puzzleState[0][0][0];
+        document.querySelector('.LUBO2').style.fill = puzzleState[0][0][0];
+        document.querySelector('.LUBO3').style.fill = puzzleState[0][0][0];
+        document.querySelector('.UBOL').style.fill = puzzleState[0][0][1];
+        document.querySelector('.OLUB').style.fill = puzzleState[0][0][3];
+        document.querySelector('.BLUO').style.fill = puzzleState[0][0][2];
+
+
+        //LUBI
+        document.querySelector('.LUBI').style.fill = puzzleState[0][1][0];
+        document.querySelector('.LUBI2').style.fill = puzzleState[0][1][0];
+        document.querySelector('.LUBI3').style.fill = puzzleState[0][1][0];
+        document.querySelector('.ULBI').style.fill = puzzleState[0][1][1];
+        document.querySelector('.ILUB').style.fill = puzzleState[0][1][3];
+        document.querySelector('.BLUI').style.fill = puzzleState[0][1][2];
+
+        //LUFI
+        document.querySelector('.LUFI').style.fill = puzzleState[0][2][0];
+        document.querySelector('.LUFI2').style.fill = puzzleState[0][2][0];
+        document.querySelector('.LIFU').style.fill = puzzleState[0][2][0];
+        document.querySelector('.FULI').style.fill = puzzleState[0][2][2];
+        document.querySelector('.ILFU').style.fill = puzzleState[0][2][3];
+        document.querySelector('.ULFI').style.fill = puzzleState[0][2][1];
+
+        // LUFO
+        document.querySelector('.LUFO').style.fill = puzzleState[0][3][0];
+        document.querySelector('.LUFO2').style.fill = puzzleState[0][3][0];
+        document.querySelector('.LUFO3').style.fill = puzzleState[0][3][0];
+        document.querySelector('.FLUO').style.fill = puzzleState[0][3][2];
+        document.querySelector('.OFUL').style.fill = puzzleState[0][3][3];
+        document.querySelector('.UFOL').style.fill = puzzleState[0][3][1];
+
+        //LDBO
+        document.querySelector('.OLDB').style.fill = puzzleState[0][4][3];
+        document.querySelector('.LDBO').style.fill = puzzleState[0][4][0];
+        document.querySelector('.LDBO2').style.fill = puzzleState[0][4][0];
+        document.querySelector('.LDBO3').style.fill = puzzleState[0][4][0];
+        document.querySelector('.DLBO').style.fill = puzzleState[0][4][1];
+        document.querySelector('.BLDO').style.fill = puzzleState[0][4][2];
+
+        //LDBI
+        document.querySelector('.DLBI').style.fill = puzzleState[0][5][1];
+        document.querySelector('.LDBI').style.fill = puzzleState[0][5][0];
+        document.querySelector('.LDBI2').style.fill = puzzleState[0][5][0];
+        document.querySelector('.LDBI3').style.fill = puzzleState[0][5][0];
+        document.querySelector('.ILDB').style.fill = puzzleState[0][5][3];
+        document.querySelector('.BLDI').style.fill = puzzleState[0][5][2];
+
+        //LDFI
+        document.querySelector('.FDLI').style.fill = puzzleState[0][6][2];
+        document.querySelector('.LDFI').style.fill = puzzleState[0][6][0];
+        document.querySelector('.LDFI2').style.fill = puzzleState[0][6][0];
+        document.querySelector('.LFID').style.fill = puzzleState[0][6][0];
+        document.querySelector('.DLFI').style.fill = puzzleState[0][6][1];
+        document.querySelector('.ILFD').style.fill = puzzleState[0][6][3];
+
+        //LDFO
+        document.querySelector('.LDFO').style.fill = puzzleState[0][7][0];
+        document.querySelector('.LDFO2').style.fill = puzzleState[0][7][0];
+        document.querySelector('.LDFO3').style.fill = puzzleState[0][7][0];
+        document.querySelector('.FLDO').style.fill = puzzleState[0][7][2];
+        document.querySelector('.OFDL').style.fill = puzzleState[0][7][3];
+        document.querySelector('.DLFO').style.fill = puzzleState[0][7][1];
+
+
+
+
+
+        // R STICKERS:
+        // -------------------
+
+
+
+
+        //RUBI
+        document.querySelector('.RUBI').style.fill = puzzleState[1][0][0];
+        document.querySelector('.RUBI2').style.fill = puzzleState[1][0][0];
+        document.querySelector('.IRUB').style.fill = puzzleState[1][0][3];
+        document.querySelector('.BIRU').style.fill = puzzleState[1][0][2];
+        document.querySelector('.RIBU').style.fill = puzzleState[1][0][0];
+        document.querySelector('.URIB').style.fill = puzzleState[1][0][1];
+
+        //RUBO
+        document.querySelector('.ORUB').style.fill = puzzleState[1][1][3];
+        document.querySelector('.RUBO').style.fill = puzzleState[1][1][0];
+        document.querySelector('.RUBO2').style.fill = puzzleState[1][1][0];
+        document.querySelector('.BORU').style.fill = puzzleState[1][1][2];
+        document.querySelector('.ROBU').style.fill = puzzleState[1][1][0];
+        document.querySelector('.URBO').style.fill = puzzleState[1][1][1];
+
+        //RDBI
+        document.querySelector('.RDBI').style.fill = puzzleState[1][4][0];
+        document.querySelector('.RDBI2').style.fill = puzzleState[1][4][0];
+        document.querySelector('.IRDB').style.fill = puzzleState[1][4][3];
+        document.querySelector('.DBRI').style.fill = puzzleState[1][4][1];
+        document.querySelector('.RIBD').style.fill = puzzleState[1][4][0];
+        document.querySelector('.BIRD').style.fill = puzzleState[1][4][2];
+
+        //RUFI
+        document.querySelector('.IRUF').style.fill = puzzleState[1][3][3];
+        document.querySelector('.RUFI').style.fill = puzzleState[1][3][0];
+        document.querySelector('.RUFI2').style.fill = puzzleState[1][3][0];
+        document.querySelector('.RUFI3').style.fill = puzzleState[1][3][0];
+        document.querySelector('.FURI').style.fill = puzzleState[1][3][2];
+        document.querySelector('.URIF').style.fill = puzzleState[1][3][1];
+
+        //RUFO
+        document.querySelector('.RUFO').style.fill = puzzleState[1][2][0];
+        document.querySelector('.RUFO2').style.fill = puzzleState[1][2][0];
+        document.querySelector('.RUFO3').style.fill = puzzleState[1][2][0];
+        document.querySelector('.FURO').style.fill = puzzleState[1][2][2];
+        document.querySelector('.ORUF').style.fill = puzzleState[1][2][3];
+        document.querySelector('.URFO').style.fill = puzzleState[1][2][1];
+
+        //RDFI
+        document.querySelector('.IRDF').style.fill = puzzleState[1][6][3];
+        document.querySelector('.RDFI').style.fill = puzzleState[1][6][0];
+        document.querySelector('.RDFI2').style.fill = puzzleState[1][6][0];
+        document.querySelector('.RDFI3').style.fill = puzzleState[1][6][0];
+        document.querySelector('.FDRI').style.fill = puzzleState[1][6][2];
+        document.querySelector('.DFRI').style.fill = puzzleState[1][6][1];
+
+        //RDFO
+        document.querySelector('.RDFO').style.fill = puzzleState[1][7][0];
+        document.querySelector('.RDFO2').style.fill = puzzleState[1][7][0];
+        document.querySelector('.RDFO3').style.fill = puzzleState[1][7][0];
+        document.querySelector('.FDRO').style.fill = puzzleState[1][7][2];
+        document.querySelector('.DFRO').style.fill = puzzleState[1][7][1];
+        document.querySelector('.ORDF').style.fill = puzzleState[1][7][3];
+
+        //RDBO
+        document.querySelector('.RDBO').style.fill = puzzleState[1][5][0];
+        document.querySelector('.RDBO2').style.fill = puzzleState[1][5][0];
+        document.querySelector('.ROBD').style.fill = puzzleState[1][5][0];
+        document.querySelector('.DBRO').style.fill = puzzleState[1][5][1];
+        document.querySelector('.ORDB').style.fill = puzzleState[1][5][3];
+        document.querySelector('.BORD').style.fill = puzzleState[1][5][2];
+
+
+
+
+
+
+
+        // additional customisation:
+
+
+        var outlineWidth = 3;
+        if (searchParams.has('outlineWidth')) {
+            outlineWidth = searchParams.get('outlineWidth');
+        }
+        var outlineColor = "black";
+        if (searchParams.has('outlineColor')) {
+            outlineColor = searchParams.get('outlineColor');
+        }
+
+
+        // get everything with the `all` attribute (so every single sticker)
+        var allList = document.getElementsByTagName("polygon");
+        for (var m = 0; m < allList.length; m++) {
+            allList[m].style['stroke-width'] = outlineWidth;
+            allList[m].style['stroke-linejoin'] = "bevel";
+            allList[m].style['stroke'] = outlineColor;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ]]>
+    </script>
+
+</svg>

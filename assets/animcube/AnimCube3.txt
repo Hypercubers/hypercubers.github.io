@@ -1,0 +1,4 @@
+buttonbar=0
+hint=7
+scale=3
+bgcolor=1E2129

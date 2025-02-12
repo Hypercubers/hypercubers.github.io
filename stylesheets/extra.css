@@ -1,0 +1,12 @@
+.md-nav__title {
+    box-shadow: none !important;
+}
+
+.md-footer__inner {
+    display: none !important;
+}
+
+.hidden {
+  opacity: 50%;
+  scale: 70%;
+}

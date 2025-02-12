@@ -1,0 +1,4186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hypercubing.xyz/theory/physical/">
+      
+      
+        <link rel="prev" href="../open-questions/">
+      
+      
+        <link rel="next" href="../../jokes/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>Physical puzzles - Hypercubing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+<script src="/assets/animcube/AnimCube2.js"></script>
+<script src="/assets/animcube/AnimCube3.js"></script>
+<script src="/assets/animcube/AnimCube4.js"></script>
+
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#physical-puzzles" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Hypercubing" class="md-header__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hypercubing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Physical puzzles
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../leaderboards/" class="md-tabs__link">
+          
+  
+    
+  
+  Leaderboards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../discord/" class="md-tabs__link">
+        
+  
+    
+  
+  Discord
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hypercubing" class="md-nav__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    Hypercubing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Wiki
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro-4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../koans/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Koans
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Koans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/adaptability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applications of Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/behold/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Behold!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/soup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/square-prism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Prism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/twice-spun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Twice Spun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../methods/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Methods
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            Methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_1" id="__nav_1_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/4tega/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4tega
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/cell-by-cell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cell by Cell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_2" id="__nav_1_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3x3x3x3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            3x3x3x3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/3block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3-Block
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/octachoroux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Octachoroux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_3" id="__nav_1_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physical 2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Physical 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grcl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GRCL Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna's Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/p4l/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P4L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/big-cube-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Big Cube)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/dimensional-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Dimensional)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/general-cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generalized CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/ll-strats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Last Layer Strategies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            Puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/physical/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1" id="__nav_1_11_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            Physical puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/4d-pyraminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dominik&rsquo;s 4D Pyraminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/restricted-2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restricted 2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/physical/2x2x2x2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Melinda's 2x2x2x2
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1_13" id="__nav_1_11_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_11_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Melinda's 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/canonical-moves/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canonical Moves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/image-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Image Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/scramble-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Scramble Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/nxnxnxn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    N×N×N×N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/4d-skewb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4D Skewb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/hemimegaminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hemimegaminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/hypercuboids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypercuboids
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../software/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/hyperspeedcube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperspeedcube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magiccube4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Cube 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magicpuzzleultimate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Puzzle Ultimate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../techniques/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Techniques
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Techniques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/F2L/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F2L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/commutators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commutators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/rkt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RKT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_14" id="__nav_1_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gods-number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    God&rsquo;s Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grip-theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grip Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../invariants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Piece invariants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#melindas-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      Melinda&rsquo;s 24
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricted-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricted 25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unrestricted-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unrestricted 25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      26
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricted-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricted 26
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jokes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jokes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leaderboards/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Leaderboards
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Leaderboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/aggregate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Stats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Record History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/other-leaderboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Leaderboards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Records
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Solvers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Solvers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/adam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adam Marcellus Kelly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/akkei/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Akkei
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/alvin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alvin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hactar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Andrew Farkas (Hactar)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/asa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asa Kaplan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/bilal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bilal Mourad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cali/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cali Kerschen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/connor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connor Lindsay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/danielcohen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daniel Cohen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/edan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edan Maor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/battistin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emanuele Battistin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/ethandavis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethan Davis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/weill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freya
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gstout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gabe Stout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/godly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Godly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant Staten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hana (Curun1r)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pickle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Henry Pickle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hyperespy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperespy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jackcai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jack Cai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jessica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jessica Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/josie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Josie Elliston
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kevin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    K3v1N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kliu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kevin Liu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/koen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koen R.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/lorenzo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lorenzo1098
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna Harran
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/markk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/milojacquet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Milo Jacquet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/myigiter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Murat Emre Yiğiter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/nenri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nenri
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/origamist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Origamist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/olaf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Olaf Niechcial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkearth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PKEarth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rayzchen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ray Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan Fortier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/saturnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Saturnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/yuste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sebastian Yuste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/starry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starryninja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/stella/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stella
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tetrian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tetrian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cubedude/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Cube Dude
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/void/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Void
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TheGrayCuber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkmnhx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trey Bowen (Pkmnhx43)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tymofro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon Fro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/vin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pistelli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vincent Pistelli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discord
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#melindas-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      Melinda&rsquo;s 24
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricted-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricted 25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unrestricted-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unrestricted 25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      26
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restricted-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restricted 26
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Hypercubers/hypercubing.xyz/edit/main/docs/theory/physical.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="physical-puzzles">Physical puzzles<a class="headerlink" href="#physical-puzzles" title="Permanent link">&para;</a></h1>
+<p>Higher-dimensional (&ldquo;virtual&rdquo;) puzzles naturally exist in more than 3 dimensions. Physical puzzles are a way to make a 3-dimensional object that functions similarly to this higher-dimensional puzzle. They must be able to perform the moves of the puzzle, so everything that can be done on the virtual puzzle can be done on the physical puzzle. However, most physical puzzles are able to perform other moves that are not allowed on the virtual puzzle, and these must be disallowed by the rules of operating the puzzle. The more rules a puzzle requires, the more complicated operating it becomes, and it becomes less interesting. The most interesting and natural physical puzzles implement as many of the restrictions as possible as part of the mechanism.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The relationship between virtual and physical puzzles is reversed from what it usually is in 3 dimensions! In the normal case, the physical puzzle has a mechanism that restricts the possible moves, and the unrestricted moves become legal, and a virtual simulation of the puzzle should copy the moves from the physical puzzle. However, when constructing a virtual higher-dimensional puzzle, the legal moves are defined abstractly, and the physical puzzle needs to have restrictions applied to it by rules.</p>
+</div>
+<p>The simplest way to construct a physical puzzle is to create the most unrestricted object possible, and apply all restrictions via the rules. We can make one physical piece for each sticker of the virtual puzzle, and observe on the virtual puzzle the permutation of the stickers when applying one move. When we allow this set of moves on the physical puzzle, we get <em>sticker soup</em>. This is the simplest way to construct a physical puzzle, and since it has no mechanism at all, the rules of operation are just the permutation. This is generally considered uninteresting.</p>
+<p>Since in a virtual puzzle, stickers are part of pieces and cannot be separated, it makes sense to make this a restriction of a physical puzzle as well. In this case, a physical piece is a virtual piece. This applies some design constraints to the puzzle. On the virtual puzzle, there are generally moves that reorient a piece, which has the effect of permuting its stickers. This produces the orientation group of the piece. A physical puzzle built like this must have pieces that can represent that symmetry group.</p>
+<h2 id="melindas-24">Melinda&rsquo;s 2<sup>4</sup><a class="headerlink" href="#melindas-24" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/melinda_2x2x2x2_render.png" data-type="image" data-width="auto" data-height="auto" data-title="Melinda's 2&times;2&times;2&times;2" data-desc-position="bottom"><img alt="Melinda's 2&times;2&times;2&times;2" src="https://assets.hypercubing.xyz/img/phys/melinda_2x2x2x2_render.png" width="40%" /></a></p>
+<p>The 2<sup>4</sup> has 16 pieces, each with 4 stickers. By performing moves on a virtual 2<sup>4</sup>, a piece can be brought back to its position with any even permutation of stickers. (It is not just the <a href="../invariants/#monoflip">monoflip</a> because that assumes the rest of the puzzle is solved, which is not important here.) In three dimensions, a tetrahedron with its four vertices representing the stickers has the same symmetry. (This is not a coincidence; a 2<sup>4</sup> built on the surface of a hypersphere will have its pieces be spherical tetrahedra with the stickers at the vertices.) Thus, the pieces of Melinda&rsquo;s 2<sup>4</sup> have tetrahedral symmetry.</p>
+<p>This is not the only design decision resulting in a usable physical puzzle. Since the pieces of the 2<sup>4</sup> can be arranged in two cubic layers, the pieces are cubes to allow them to stick together in this fashion. This makes many of the moves simply rotating one whole cube of 8 pieces, and the others rotate 4 pieces from each layer in a simple way. These moves are unable to swap a white or yellow sticker with a sticker of a different color, which means the puzzle simulates a cubic prism puzzle: a 2<sup>3</sup><span data-replace="&times;">x</span>2<sup>1</sup> cuboid, where the first three axes can turn into each other but the last one cannot in the same way that a <a href="../../puzzles/physical/2x3x3x3/">3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>2</a> is restricted.</p>
+<p>The virtual 2<sup>4</sup>, on the other hand, does allow moves that take a white or yellow sticker to a sticker of a different color, and the pieces were designed so that this operation is possible. It would be possible to observe those moves, record which piece goes where, and apply that to the physical 2<sup>4</sup>, but this is unwieldy. Instead, Melinda introduced a <em>gyro</em>, a sequence of actions that does the equivalent of a whole-puzzle rotation on the virtual puzzle, but takes a white sticker to a sticker on a different axis. Thus, other moves are accessible by performing the gyro followed by a simple move. On this puzzle, a gyro is usually about six physical twisting actions, but on other puzzles, they can be more complicated, so finding a puzzle that supports a short gyro is valuable.</p>
+<h2 id="restricted-25">Restricted 2<sup>5</sup><a class="headerlink" href="#restricted-25" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/restricted_22222_grant.png" data-type="image" data-width="auto" data-height="auto" data-title="Restricted 2&times;2&times;2&times;2&times;2" data-desc-position="bottom"><img alt="Restricted 2&times;2&times;2&times;2&times;2" src="https://assets.hypercubing.xyz/img/phys/restricted_22222_grant.png" width="40%" /></a></p>
+<p>The pieces of a virtual 2<sup>5</sup> have 60 orientations, the even permutations of its 5 stickers. It is difficult to design a piece with this symmetry, so the restricted 2<sup>5</sup> sets one axis to be unswappable with the others, i.e. it is a 2<sup>4</sup><span data-replace="&times;">x</span>2<sup>1</sup> in the notation of the previous section. This means the pieces only need to be able to evenly permute 4 of their stickers, which is the same symmetry as the pieces of the physical 2<sup>4</sup>. The pieces from that can thus be reused to build the restricted 2<sup>5</sup>, with one sticker added to each piece. The extra sticker needs to be invariant under all rotations of the piece, so it needs to be applied to every face of the piece.</p>
+<p>The design of the puzzle is simple: two copies of the physical 2<sup>4</sup>, where the legal moves are doing a whole puzzle rotation on one, doing the same twist on both, or swapping 8 pieces from each half by twisting a side of the puzzle. The design requires a buffer layer (pictured above in purple), because if it were not present, doing a 90° rotation of the whole puzzle corresponds to three moves on the virtual restricted 2<sup>5</sup>, which is considered illegal in solves.</p>
+<h2 id="unrestricted-25">Unrestricted 2<sup>5</sup><a class="headerlink" href="#unrestricted-25" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/grant_22222_2.png" data-type="image" data-width="auto" data-height="auto" data-title="Grant's 2&times;2&times;2&times;2&times;2" data-desc-position="bottom"><img alt="Grant's 2&times;2&times;2&times;2&times;2" src="https://assets.hypercubing.xyz/img/phys/grant_22222_2.png" width="40%" /></a></p>
+<p>It is not impossible to design a piece with 5 stickers that supports all even permutations of its stickers. The symmetry group of this piece is called <span class="arithmatex">\(A_5\)</span>, the alternating group on 5 points, and it is isomorphic to the symmetry of the icosahedron. It is not obvious whether there are actually 5 objects permuted by this group, but there are: the 5 tetrahedra of the compound of 5 tetrahedra, or the 5 cubes of the compound of 5 cubes. Any even permutation of the 5 components of either shape can be realized as a rotation of the whole shape.</p>
+<div class="admonition example">
+<p class="admonition-title">The compounds of 5 tetrahedra and 5 cubes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p><center>
+<a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/shapes/compound_of_five_tetrahedra.png" data-type="image" data-width="auto" data-height="auto" data-title="Compound of 5 tetrahedra" data-desc-position="bottom"><img alt="Compound of 5 tetrahedra" src="https://assets.hypercubing.xyz/img/phys/shapes/compound_of_five_tetrahedra.png" width="40%" /></a>
+<a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/shapes/compound_of_five_cubes.png" data-type="image" data-width="auto" data-height="auto" data-title="Compound of 5 cubes" data-desc-position="bottom"><img alt="Compound of 5 cubes" src="https://assets.hypercubing.xyz/img/phys/shapes/compound_of_five_cubes.png" width="40%" /></a>
+</center></p>
+</div>
+<p>Observe that in the compound of 5 cubes, if you take one cube as fixed, the other four cubes each share one pair of opposite vertices with it. In particular, the arrangement of these 4 other cubes has the same symmetry as the 4 stickers of the piece of the physical 2<sup>4</sup>, or the 4 exchangeable stickers of the restricted 2<sup>5</sup>. Thus, by designing a piece based on this object, the true physical 2<sup>5</sup> can be implemented that shares all the moves of the restricted 2<sup>5</sup>, along with one new gyro move. Because of the complexity of the puzzle, the gyro is very difficult to execute.</p>
+<div class="admonition example inline end">
+<p class="admonition-title">2<sup>5</sup> gyro, by Akkei</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/5d_gyro.gif" data-type="image" data-width="auto" data-height="auto" data-title="2^5^ gyro, by Akkei" data-desc-position="bottom"><img alt="2^5^ gyro, by Akkei" src="https://assets.hypercubing.xyz/img/phys/5d_gyro.gif" /></a></p>
+</div>
+<h2 id="26">2<sup>6</sup><a class="headerlink" href="#26" title="Permanent link">&para;</a></h2>
+<p>The virtual 2<sup>6</sup> has pieces, which have 6 stickers each. Each piece must be able to perform all even permutations of all 6 stickers, which results in the group <span class="arithmatex">\(A_6\)</span> of order 360. A rigid piece in 3 dimensions must have as its symmetry a chiral <a href="https://en.wikipedia.org/wiki/Point_groups_in_three_dimensions">point group</a>. However, the only discrete chiral point groups in 3 dimensions of order 360 all contain a rotation by <span class="arithmatex">\(\frac{\pi}{90}\)</span>, which has order 180. <span class="arithmatex">\(A_6\)</span> has no elements of order 180, so none of these point groups are isomorphic to <span class="arithmatex">\(A_6\)</span>, and a physical 2<sup>6</sup> with rigid pieces is impossible. (The lowest dimension to have an object with the requisite symmetry is 5, with the 5-simplex.)</p>
+<p>This does not preclude other designs for a physical 2^6 that have not been developed yet. For instance, a skewb has 6 center pieces, and all even permutations of them are accessible with skewb twists. This means that skewbs can be used as pieces for a physical 2<sup>6</sup>. Whether there is a design for it that does not require manipulating the individual pieces every turn is unknown.</p>
+<h2 id="restricted-26">Restricted 2<sup>6</sup><a class="headerlink" href="#restricted-26" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/phys/akkei_2422.png" data-type="image" data-width="auto" data-height="auto" data-title="Akkei's restricted 2&times;2&times;2&times;2&times;2&times;2" data-desc-position="bottom"><img alt="Akkei's restricted 2&times;2&times;2&times;2&times;2&times;2" src="https://assets.hypercubing.xyz/img/phys/akkei_2422.png" width="40%" /></a></p>
+<p>There are several ways to restrict a 2<sup>6</sup> to make it able to be made physical. One way is to make it a 2<sup>5</sup><span data-replace="&times;">x</span>2<sup>1</sup>, which can be made physical out of two copies of the 2<sup>5</sup> in the same way as the 2<sup>4</sup><span data-replace="&times;">x</span>2<sup>1</sup> was made out of the 2<sup>4</sup>. Another way is the 2<sup>4</sup><span data-replace="&times;">x</span>2<sup>2</sup>, pictured above. Each piece of the 2<sup>4</sup><span data-replace="&times;">x</span>2<sup>2</sup> has four 4-stickers and two 2-stickers. The four 4-stickers can have an even permutation applied to them, or the two 2-stickers can be swapped and an odd permutation can be applied to the four 4-stickers. This enlarges the symmetry group of the piece from <span class="arithmatex">\(A_4\)</span> to <span class="arithmatex">\(S_4\)</span>, the symmetric group on 4 points. Fortunately, octahedral symmetry acts on the four space diagonals of a cube by <span class="arithmatex">\(S_4\)</span>, and one endpoint from each diagonal corresponds to the vertices of a tetrahedron, used for the stickers on the 2<sup>4</sup>. Therefore, the 4-stickers can be placed on opposite corners of a cube. The stickers on the periphery of the pieces correspond to the 2-stickers, which swap whenever the piece is rotated in a way that does not preserve the original tetrahedron, i.e. one that does an odd permutation. It may require one or more buffer layers.</p>
+<!-- n^4 piece types -->
+<!-- 4D stages and alg sets -->
+<!-- 3D stages and alg sets -->
+<!-- 3D methods -->
+<!-- Software -->
+<!-- Turn metrics -->
+<!-- Misc. -->
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Images created with <a href="http://www.software3d.com/Stella.php">Stella software</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Hypercubers" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/xxFvfyx89p" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/symbol_replace.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

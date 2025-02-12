@@ -1,0 +1,4445 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hypercubing.xyz/puzzles/4d-skewb/">
+      
+      
+        <link rel="prev" href="../3x3x3x3x3/">
+      
+      
+        <link rel="next" href="../hemimegaminx/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>4D Skewb - Hypercubing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+<script src="/assets/animcube/AnimCube2.js"></script>
+<script src="/assets/animcube/AnimCube3.js"></script>
+<script src="/assets/animcube/AnimCube4.js"></script>
+
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4d-skewb" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Hypercubing" class="md-header__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hypercubing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4D Skewb
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../leaderboards/" class="md-tabs__link">
+          
+  
+    
+  
+  Leaderboards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../discord/" class="md-tabs__link">
+        
+  
+    
+  
+  Discord
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hypercubing" class="md-nav__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    Hypercubing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Wiki
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro-4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../koans/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Koans
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Koans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/adaptability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applications of Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/behold/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Behold!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/soup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/square-prism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Prism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/twice-spun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Twice Spun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../methods/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Methods
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            Methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_1" id="__nav_1_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/4tega/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4tega
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/cell-by-cell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cell by Cell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_2" id="__nav_1_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3x3x3x3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            3x3x3x3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/3block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3-Block
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/octachoroux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Octachoroux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_3" id="__nav_1_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physical 2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Physical 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grcl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GRCL Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna's Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/p4l/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P4L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/big-cube-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Big Cube)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/dimensional-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Dimensional)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/general-cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generalized CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/ll-strats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Last Layer Strategies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            Puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../physical/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1" id="__nav_1_11_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            Physical puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/1x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/1x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/1x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/1x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/4d-pyraminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dominik&rsquo;s 4D Pyraminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/restricted-2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restricted 2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../physical/2x2x2x2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Melinda's 2x2x2x2
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1_13" id="__nav_1_11_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_11_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Melinda's 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x2x2/canonical-moves/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canonical Moves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x2x2/image-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Image Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/2x2x2x2/scramble-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Scramble Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nxnxnxn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    N×N×N×N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3x3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4D Skewb
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4D Skewb
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cube-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cube-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cube-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertex-turning-hypercube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex turning hypercube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewb-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skewb lookalike
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demi-vertex-turning-hypercube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demi vertex turning hypercube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demi-skewb-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demi skewb lookalike
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplex-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplex-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simplex-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2g-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-carved-simplex-hemi-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g carved simplex, hemi colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-ridge-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g ridge carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-cell-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="24-cell-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike-16-cell-cuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike, 16-cell cuts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike-8-cell-cuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike, 8-cell cuts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hemimegaminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hemimegaminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hypercuboids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypercuboids
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../software/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/hyperspeedcube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperspeedcube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magiccube4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Cube 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magicpuzzleultimate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Puzzle Ultimate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../techniques/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Techniques
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Techniques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/F2L/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F2L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/commutators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commutators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/rkt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RKT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_14" id="__nav_1_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/gods-number/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    God&rsquo;s Number
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/grip-theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grip Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/invariants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Piece invariants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/open-questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/physical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jokes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jokes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leaderboards/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Leaderboards
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Leaderboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/aggregate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Stats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Record History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/other-leaderboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Leaderboards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Records
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Solvers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Solvers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/adam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adam Marcellus Kelly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/akkei/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Akkei
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/alvin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alvin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hactar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Andrew Farkas (Hactar)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/asa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asa Kaplan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/bilal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bilal Mourad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cali/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cali Kerschen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/connor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connor Lindsay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/danielcohen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daniel Cohen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/edan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edan Maor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/battistin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emanuele Battistin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/ethandavis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethan Davis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/weill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freya
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gstout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gabe Stout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/godly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Godly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant Staten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hana (Curun1r)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pickle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Henry Pickle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hyperespy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperespy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jackcai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jack Cai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jessica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jessica Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/josie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Josie Elliston
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kevin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    K3v1N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kliu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kevin Liu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/koen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koen R.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/lorenzo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lorenzo1098
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna Harran
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/markk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/milojacquet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Milo Jacquet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/myigiter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Murat Emre Yiğiter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/nenri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nenri
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/origamist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Origamist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/olaf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Olaf Niechcial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkearth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PKEarth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rayzchen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ray Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan Fortier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/saturnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Saturnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/yuste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sebastian Yuste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/starry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starryninja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/stella/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stella
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tetrian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tetrian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cubedude/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Cube Dude
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/void/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Void
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TheGrayCuber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkmnhx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trey Bowen (Pkmnhx43)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tymofro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon Fro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/vin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pistelli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vincent Pistelli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discord
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cube-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cube-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cube-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertex-turning-hypercube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertex turning hypercube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewb-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skewb lookalike
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demi-vertex-turning-hypercube" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demi vertex turning hypercube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demi-skewb-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demi skewb lookalike
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simplex-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simplex-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simplex-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2g-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-carved-simplex-hemi-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g carved simplex, hemi colors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2g-3g-ridge-carved-simplex" class="md-nav__link">
+    <span class="md-ellipsis">
+      2g-3g ridge carved simplex
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-cell-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell-like
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="24-cell-like">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike-16-cell-cuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike, 16-cell cuts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-cell-skewb-diamond-lookalike-8-cell-cuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      24-cell skewb diamond lookalike, 8-cell cuts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Hypercubers/hypercubing.xyz/edit/main/docs/puzzles/4d-skewb.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="4d-skewb">4D Skewb<a class="headerlink" href="#4d-skewb" title="Permanent link">&para;</a></h1>
+<p>There are many puzzles that could be called a &lsquo;4D skewb&rsquo;. Each one has some characteristics similar to the skewb. By constructing the skewb in a certain way, and replacing 3D objects of the definition with similar 4D objects, you can construct a 4D puzzle that has some things in common with the skewb.</p>
+<h2 id="cube-like">Cube-like<a class="headerlink" href="#cube-like" title="Permanent link">&para;</a></h2>
+<h3 id="vertex-turning-hypercube">Vertex turning hypercube<a class="headerlink" href="#vertex-turning-hypercube" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Vertex turning hypercube</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/vertex_turning.png" data-type="image" data-width="auto" data-height="auto" data-title="Vertex turning hypercube" data-desc-position="bottom"><img alt="Vertex turning hypercube" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/vertex_turning.png" /></a></p>
+</div>
+<p>The skewb is a vertex-turning cube with the cuts passing through the origin. If you replace the 3D cube in the definition with the 4D hypercube, you get the half-cut vertex-turning hypercube. This puzzle has 32 edge pieces, 64 X-centers, and 8 center pieces. Both the X-centers and the centers are <abbr title="1-colored">1c</abbr> pieces. </p>
+<p>In three dimensions, a plane perpendicular to the vertex axis passes through 1 corner, then 3, then 3, then 1 corner. This causes a plane passing through the origin to go between the two layers of 3 corners, which is why the skewb has corners. In four dimensions, a hyperplane perpendicular to the vertex axis passes through 1, 4, 6, 4, then 1 corner. Therefore, a hyperplane passing through the origin passes directly through 6 vertices, and there are no corner pieces on this 4D puzzle. Similarly, the pattern of cuts on one cell of the puzzle looks like a dino cube, not a skewb.</p>
+<h3 id="skewb-lookalike">Skewb lookalike<a class="headerlink" href="#skewb-lookalike" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Skewb lookalike</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/skewb_lookalike.png" data-type="image" data-width="auto" data-height="auto" data-title="Skewb lookalike" data-desc-position="bottom"><img alt="Skewb lookalike" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/skewb_lookalike.png" /></a></p>
+</div>
+<p>You can place a cut that passes between the layers of four and six corners. Through this process, you get two cuts per axis and three layers per axis. This puzzle has 16 vertex pieces, 64 X-centers, and 24 ridge pieces. Like the skewb, the vertex pieces are separated into two orbits, but this puzzle has a middle layer on each axis. The cut pattern on the cells of this puzzle resembles a 3D skewb with additional trivial tips. </p>
+<p>By rectifying the hypercube, the trivial tip cuts on the cut patterns of the cells are removed, meaning the cells look like cuboctahedral skewbs.</p>
+<h3 id="demi-vertex-turning-hypercube">Demi vertex turning hypercube<a class="headerlink" href="#demi-vertex-turning-hypercube" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Demi vertex turning hypercube</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/demi_vertex_turning.png" data-type="image" data-width="auto" data-height="auto" data-title="Demi vertex turning hypercube" data-desc-position="bottom"><img alt="Demi vertex turning hypercube" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/demi_vertex_turning.png" /></a></p>
+</div>
+<p>On the cube, the vertices can be separated into two tetrahedral subsets (the orbits of the skewb&rsquo;s corners). Each cut corresponds to one corner in the tetrahedron. On the hypercube, a similar partitioning of the vertices results in two sets of 8, each at the vertices of the 16-cell, or dually, the facets of a differently-oriented hypercube. If you only cut along vertex axes corresponding to these cuts, you will get a puzzle with only 4 cuts, half as many as the vertex turning hypercube. This puzzle has 8 corners and 8 centers. Unlike on the skewb, only half of the vertices of the hypercube have a corner piece, and all the corner pieces are in one orbit.</p>
+<h3 id="demi-skewb-lookalike">Demi skewb lookalike<a class="headerlink" href="#demi-skewb-lookalike" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Demi skewb lookalike</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/demi_skewb_lookalike.png" data-type="image" data-width="auto" data-height="auto" data-title="Demi skewb lookalike" data-desc-position="bottom"><img alt="Demi skewb lookalike" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/demi_skewb_lookalike.png" /></a></p>
+</div>
+<p>If you only use the axes along half the vertices as above, but you use the cut depths of the skewb lookalike, it results in a puzzle that still has three layers per axis, but only half as many axes. The cut pattern on the cells of this puzzle also resembles a 3D skewb, but with only 4 trivial tips per cell. The puzzle has 8 corner pieces, 8 dual corner pieces of a different shape, 32 X-centers, and 24 ridge pieces.</p>
+<p>As before, the hypercube can be rectified, which removes the trivial tips from the cut patterns of the cells.</p>
+<p><br></p>
+<details class="info">
+<summary>Extra turns</summary>
+<p>In the two demi puzzles, the 8 vertices are arranged like the cells of a hypercube. This means they are actually shapemods of hypercubic puzzles. As such, they have an additional shapeshifting move in which you turn one layer by 90°. There is no analogous move on the skewb. In particular, the demi vertex turning hypercube is a shapemod of a <a href="../2x2x2x2/">2<span data-replace="&times;">x</span>2<span data-replace="&times;">x</span>2<span data-replace="&times;">x</span>2</a>, and the demi skewb lookalike is a shapemod of a <a href="../3x3x3x3/">3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3</a>, but with the 8 corner pieces that would be at the center of the cells missing.</p>
+<p>Because the 16-cell axis system, or the vertex turning hypercube system, is composed of two disjoint hypercube axis systems, these puzzles also have additional shapeshifting moves in which you turn a layer 90°. Unlike those in the previous section, though, performing one of these turns would bandage the puzzle. If you unbandaged these puzzles, you would get additional cuts parallel to the cells, resulting in the axis system of a 24-cell.</p>
+</details>
+<h2 id="simplex-like">Simplex-like<a class="headerlink" href="#simplex-like" title="Permanent link">&para;</a></h2>
+<p>The skewb can be constructed in a different way: take four axes corresponding to a tetrahedron, and cut perpendicular to each axis through the origin. The tetrahedron is the 3D simplex, so if you replace it with the 5-cell, the 4D simplex, you get a new puzzle in 4D. This puzzle has several types of pieces, but since the shape of the puzzle does not yet exist, we can&rsquo;t name them after their position. Thus, we will name the pieces by how many layers they are turned by. For the skewb, there are 4 pieces that are in one layer, 6 pieces that are in two layers, and 4 pieces that are in three layers. We will call these 1g, 2g, and 3g pieces. This 4D puzzle will have 5 1g pieces, 10 2g pieces, 10 3g pieces, and 5 4g pieces. The skewb has a symmetry (90° rotation of the puzzle) that swaps 1g and 3g pieces and sends 2g to 2g pieces. Similarly, the 4D equivalent has a symmetry that swaps 1g and 4g pieces and swaps 2g and 3g pieces. Like the skewb, the cuts on this puzzle can each be offset in a consistent direction while preserving the functionality of the puzzle.</p>
+<p>Now, we can describe how to construct the skewb&rsquo;s cubic shape. On each face of the cube, there is one 2g piece in its center. Thus, given our abstractly constructed skewb, we can construct a plane perpendicular to each 2g piece&rsquo;s axis of symmetry. The shape bounded by all 6 of these planes is a cube.</p>
+<h3 id="2g-carved-simplex">2g carved simplex<a class="headerlink" href="#2g-carved-simplex" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">2g carved simplex</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/2g_carved.png" data-type="image" data-width="auto" data-height="auto" data-title="2g carved simplex" data-desc-position="bottom"><img alt="2g carved simplex" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/2g_carved.png" /></a></p>
+</div>
+<p>Like in 3D, you can put a hyperplane perpendicular to the symmetry axis of each 2g piece. Since there are 10 2g pieces, this creates a polychoron with 10 triangular-bipyramidal cells called the <a href="https://polytope.miraheze.org/wiki/Joined_pentachoron">joined 5-cell</a>. On this puzzle, the 1g pieces are <abbr title="4-colored">4c</abbr> at the tetrahedral vertices, the 2g pieces are <abbr title="1-colored">1c</abbr> at the cell centers, the 3g pieces are <abbr title="3-colored">3c</abbr> at the triangular edges, and the 4g pieces are 6c at the triangular-bipyramidal vertices. Unlike on the skewb, where the 1g and 3g pieces look alike, here, the 1g and 4g pieces are distinguishable by their number of colors, and so are the 2g and 3g pieces.</p>
+<h3 id="2g-3g-carved-simplex">2g-3g carved simplex<a class="headerlink" href="#2g-3g-carved-simplex" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">2g-3g carved simplex</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/2g_3g_carved.png" data-type="image" data-width="auto" data-height="auto" data-title="2g-3g carved simplex" data-desc-position="bottom"><img alt="2g-3g carved simplex" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/2g_3g_carved.png" /></a></p>
+</div>
+<p>You can also put hyperplanes perpendicular to the symmetry axis of both the 2g and 3g pieces. This gives the puzzle a 20-celled shape called the <a href="https://polytope.miraheze.org/wiki/Bijungatodecachoron">bijungato-10-cell</a>. On this puzzle, the 1g and 4g pieces are both <abbr title="4-colored">4c</abbr> at tetrahedral vertices, and the 2g and 3g pieces are both <abbr title="1-colored">1c</abbr> at the cell centers. Unlike the previous shape but like the skewb, full symmetry of the puzzle is reflected in the shape.</p>
+<p>Each cell of the puzzle either has two 1g and one 2g pieces, or two 4g and one 3g pieces. These two orbits of cells are only adjacent across the 2g-3g boundary. Consequently, this puzzle has multiple solved states, where each cell is a solid color, but the color schemes of the two orbits are rotated relative to each other.</p>
+<h3 id="2g-3g-carved-simplex-hemi-colors">2g-3g carved simplex, hemi colors<a class="headerlink" href="#2g-3g-carved-simplex-hemi-colors" title="Permanent link">&para;</a></h3>
+<p>The puzzle can be recolored with 10 colors by giving opposite cells the same color. By asserting that the solved state has to have the two same-colored cells opposite to each other, it restricts the relative orientations of the two orbits to only one configuration, leading to there being only one solved state. Because of the geometry of the puzzle, a 1g-2g cell is opposite a 4g-3g cell, so the pieces on these cells are not swappable and coloring these two cells the same color leads to no ambiguity in the position.</p>
+<h3 id="2g-3g-ridge-carved-simplex">2g-3g ridge carved simplex<a class="headerlink" href="#2g-3g-ridge-carved-simplex" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">2g-3g ridge carved simplex</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/ridge_carved.png" data-type="image" data-width="auto" data-height="auto" data-title="2g-3g ridge carved simplex" data-desc-position="bottom"><img alt="2g-3g ridge carved simplex" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/ridge_carved.png" /></a></p>
+</div>
+<p>There are 30 square ridges between the 2g and 3g pieces. By constructing a shape bounded by the hyperplanes perpendicular to the symmetry axes of these ridges, you get a 30-cell shape with disphenoidal cells called the <a href="https://polytope.miraheze.org/wiki/Bidecachoron">bi-10-cell</a>. The 1g and 4g pieces are 12c at triakis-tetrahedral vertices, and the 2g and 3g pieces are <abbr title="3-colored">3c</abbr> at triangular ridges. This shape of the puzzle also reflects the symmetry that swaps 1g and 4g and swaps 2g and 3g.</p>
+<h2 id="prism">Prism<a class="headerlink" href="#prism" title="Permanent link">&para;</a></h2>
+<div class="admonition example inline end">
+<p class="admonition-title">Prism</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/prism.png" data-type="image" data-width="auto" data-height="auto" data-title="Prism" data-desc-position="bottom"><img alt="Prism" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/prism.png" /></a></p>
+</div>
+<p>By starting with a skewb, you can extend it into the fourth dimension by taking the cartesian product of it with a line segment. This extends the cube to a cubic prism, and the skewb cut planes to hyperplanes all perpendicular to the original cube. This creates a skewb prism, which has exactly the same pieces as the skewb but with shapes that are the prisms of the originals. It allows all the moves of the skewb, and an additional set of moves that involve flipping the new dimension, which appear as reflection moves on the original skewb. By adding more cuts parallel to the original skewb, you can create multi-layer skewb prisms.</p>
+<h2 id="24-cell-like">24-cell-like<a class="headerlink" href="#24-cell-like" title="Permanent link">&para;</a></h2>
+<h3 id="24-cell-skewb-diamond-lookalike">24-cell skewb diamond lookalike<a class="headerlink" href="#24-cell-skewb-diamond-lookalike" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">24-cell skewb diamond lookalike</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_lookalike.png" data-type="image" data-width="auto" data-height="auto" data-title="24-cell skewb diamond lookalike" data-desc-position="bottom"><img alt="24-cell skewb diamond lookalike" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_lookalike.png" /></a></p>
+</div>
+<p>The 24-cell&rsquo;s cells are octahedra, which have the same symmetry as the skewb, and its dual the skewb diamond. Construct cutting planes parallel to the cells which pass through the centers of the adjacent cells. This creates a puzzle with 24 vertex pieces, 96 ridge pieces, and 144 X-centers. This puzzle is not half-cut, but each cell&rsquo;s cut pattern looks like a skewb diamond with trivial tips. It is possible to apply <a href="../../techniques/rkt/">RKT</a> to a cell of this puzzle, in which case it acts like a skewb diamond.</p>
+<p>By rectifying the 24-cell, the trivial tip cuts on the cut patterns of the cells are removed, meaning the cells look like cuboctahedral skewbs.</p>
+<h3 id="24-cell-skewb-diamond-lookalike-16-cell-cuts">24-cell skewb diamond lookalike, 16-cell cuts<a class="headerlink" href="#24-cell-skewb-diamond-lookalike-16-cell-cuts" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">24-cell skewb diamond lookalike, 16-cell cuts</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_16.png" data-type="image" data-width="auto" data-height="auto" data-title="24-cell skewb diamond lookalike, 16-cell cuts" data-desc-position="bottom"><img alt="24-cell skewb diamond lookalike, 16-cell cuts" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_16.png" /></a></p>
+</div>
+<p>The 24-cell has a subset of cells that correspond to the cells of the 16-cell. If you only keep those cuts, you get a puzzle similar to the one above, but where 8 of the cells no longer appear to have trivial tips in their cut patterns. This puzzle has 16 large corner pieces, 8 small corner pieces, 96 ridge pieces, and 144 X-centers. Like before, RKT can be applied.</p>
+<p><br>
+<br>
+<br></p>
+<h3 id="24-cell-skewb-diamond-lookalike-8-cell-cuts">24-cell skewb diamond lookalike, 8-cell cuts<a class="headerlink" href="#24-cell-skewb-diamond-lookalike-8-cell-cuts" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">24-cell skewb diamond lookalike, 8-cell cuts</p>
+<p><a class="glightbox" href="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_8.png" data-type="image" data-width="auto" data-height="auto" data-title="24-cell skewb diamond lookalike, 8-cell cuts" data-desc-position="bottom"><img alt="24-cell skewb diamond lookalike, 8-cell cuts" src="https://assets.hypercubing.xyz/img/virt/4d_skewb/24_diamond_8.png" /></a></p>
+</div>
+<p>The 24-cell also has a subset of cells that correspond to the cells of the 8-cell, or hypercube. If you only keep those cuts, you get another puzzle similar to the one above, but where 16 of the cells do not appear to have trivial tips in their cut patterns, and 8 of the cells appear to have only the trivial tip cuts. This puzzle has 8 large corner pieces, 16 small corner pieces, 32 ridge pieces, and 8 center pieces. Unlike before, RKT cannot be applied to the skewb diamond cells. This puzzle is a shapemod of the <a href="../3x3x3x3/">3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3</a> without corner pieces.</p>
+<!-- n^4 piece types -->
+<!-- 4D stages and alg sets -->
+<!-- 3D stages and alg sets -->
+<!-- 3D methods -->
+<!-- Software -->
+<!-- Turn metrics -->
+<!-- Misc. -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Hypercubers" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/xxFvfyx89p" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/symbol_replace.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

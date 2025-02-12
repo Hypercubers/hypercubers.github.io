@@ -1,0 +1,9 @@
+Puzzle Compy_Rainbow
+Dim 3
+NAxis 1
+Faces 1,0,0 0.6667,0.6667,0.6667
+Group 1,0,0/1,1,0 1,0,0/1,0,1
+Axis 1,1,1
+Twists 1,-1,0/1,0,-1
+Cuts -0.45 0.45
+FixedMask 2

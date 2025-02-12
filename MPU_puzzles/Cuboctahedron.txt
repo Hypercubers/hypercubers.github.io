@@ -1,0 +1,11 @@
+Puzzle Cuboctahedron
+Dim 3
+NAxis 2
+Faces 1,0,0 0.667,0.667,0.667
+Group 1,0,0/1,1,0 1,0,0/1,0,1
+Axis 1,0,0
+Twists 0,1,0/0,1,1
+Cuts 0.5 -0.5
+Axis 1,1,1
+Twists 1,-1,0/1,0,-1
+Cuts 0.5 -0.5

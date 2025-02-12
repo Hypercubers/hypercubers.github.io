@@ -1,0 +1,4481 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hypercubing.xyz/theory/gods-number/">
+      
+      
+        <link rel="prev" href="../../techniques/rkt/">
+      
+      
+        <link rel="next" href="../grip-theory/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>God’s Number - Hypercubing</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+<script src="/assets/animcube/AnimCube2.js"></script>
+<script src="/assets/animcube/AnimCube3.js"></script>
+<script src="/assets/animcube/AnimCube4.js"></script>
+
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gods-number" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Hypercubing" class="md-header__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hypercubing
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              God&rsquo;s Number
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../leaderboards/" class="md-tabs__link">
+          
+  
+    
+  
+  Leaderboards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../discord/" class="md-tabs__link">
+        
+  
+    
+  
+  Discord
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hypercubing" class="md-nav__button md-logo" aria-label="Hypercubing" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    Hypercubing
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Hypercubers/hypercubing.xyz" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Hypercubers/hypercubing.xyz
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Wiki
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro-4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../progression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Progression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../videos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Videos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../koans/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Koans
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Koans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/adaptability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applications of Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/behold/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Behold!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/soup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/square-prism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square Prism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../koans/twice-spun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Twice Spun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../methods/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Methods
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            Methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_1" id="__nav_1_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/4tega/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4tega
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2/cell-by-cell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cell by Cell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_2" id="__nav_1_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3x3x3x3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            3x3x3x3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/3block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3-Block
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/3x3x3x3/octachoroux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Octachoroux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_10_3" id="__nav_1_10_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physical 2x2x2x2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Physical 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/grcl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GRCL Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna's Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/p4l/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P4L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/2x2x2x2-physical/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan's OBC Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/big-cube-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Big Cube)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/dimensional-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reduction (Dimensional)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/general-cfop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generalized CFOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methods/ll-strats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Last Layer Strategies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            Puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/physical/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1" id="__nav_1_11_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            Physical puzzles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/1x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon&rsquo;s 1×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×2×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×2×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 2×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant&rsquo;s 3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/4d-pyraminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dominik&rsquo;s 4D Pyraminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/restricted-2x2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restricted 2×2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../puzzles/physical/2x2x2x2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Melinda's 2x2x2x2
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11_1_13" id="__nav_1_11_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_11_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_11_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Melinda's 2x2x2x2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/canonical-moves/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canonical Moves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/image-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Image Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/physical/2x2x2x2/scramble-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical 2×2×2×2 Scramble Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/2x2x2x2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2×2×2×2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/nxnxnxn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    N×N×N×N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/3x3x3x3x3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3×3×3×3×3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/4d-skewb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4D Skewb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/hemimegaminx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hemimegaminx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../puzzles/hypercuboids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypercuboids
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../software/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/hyperspeedcube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperspeedcube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magiccube4d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Cube 4D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/magicpuzzleultimate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Puzzle Ultimate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../techniques/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Techniques
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Techniques
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/F2L/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F2L
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/commutators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commutators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../techniques/rkt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RKT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_14" id="__nav_1_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    God&rsquo;s Number
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    God&rsquo;s Number
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2222" class="md-nav__link">
+    <span class="md-ellipsis">
+      2×2×2×2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2×2×2×2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3333" class="md-nav__link">
+    <span class="md-ellipsis">
+      3×3×3×3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3×3×3×3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-bound_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper bound
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grip-theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grip Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../invariants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Piece invariants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../physical/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physical puzzles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jokes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jokes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leaderboards/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Leaderboards
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Leaderboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/aggregate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Stats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Record History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/other-leaderboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Leaderboards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Records
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Solvers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Solvers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/adam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adam Marcellus Kelly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/akkei/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Akkei
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/alvin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alvin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hactar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Andrew Farkas (Hactar)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/asa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asa Kaplan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/bilal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bilal Mourad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cali/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cali Kerschen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/connor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connor Lindsay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/danielcohen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daniel Cohen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/edan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Edan Maor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/battistin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emanuele Battistin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/ethandavis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethan Davis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/weill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freya
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gstout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gabe Stout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/godly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Godly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/grant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grant Staten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hana (Curun1r)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pickle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Henry Pickle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/hyperespy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperespy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jackcai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jack Cai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/jessica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jessica Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/josie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Josie Elliston
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kevin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    K3v1N
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/kliu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kevin Liu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/koen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koen R.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/lorenzo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lorenzo1098
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/luna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luna Harran
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/markk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/milojacquet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Milo Jacquet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/myigiter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Murat Emre Yiğiter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/nenri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nenri
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/origamist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Origamist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/olaf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Olaf Niechcial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkearth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PKEarth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rayzchen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ray Chen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/rowan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rowan Fortier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/saturnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Saturnb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/yuste/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sebastian Yuste
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/starry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starryninja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/stella/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stella
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tetrian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tetrian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/cubedude/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Cube Dude
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/void/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Void
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/gray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TheGrayCuber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pkmnhx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trey Bowen (Pkmnhx43)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/tymofro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tymon Fro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/vin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leaderboards/solvers/pistelli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vincent Pistelli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discord
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2222" class="md-nav__link">
+    <span class="md-ellipsis">
+      2×2×2×2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2×2×2×2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3333" class="md-nav__link">
+    <span class="md-ellipsis">
+      3×3×3×3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3×3×3×3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lower bound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upper-bound_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upper bound
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimate_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Hypercubers/hypercubing.xyz/edit/main/docs/theory/gods-number.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="gods-number">God&rsquo;s Number<a class="headerlink" href="#gods-number" title="Permanent link">&para;</a></h1>
+<p><strong>God&rsquo;s number</strong> is the minimum number of moves that is sufficient to solve a twisty puzzle from any starting position. For 3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3, this has <a href="http://cube20.org/">been proven</a> to be 20 HTM (or 26 QTM).</p>
+<p>God&rsquo;s number for 3<sup>3</sup> took <a href="http://cube20.org/">lots of creative mathematical work and 35 years of CPU time</a> to prove <span class="arithmatex">\(\sim 4.3 \times 10^{19}\)</span> states reachable in 20 moves or less. For comparison, the 2<sup>4</sup> has <span class="arithmatex">\(\sim 3.4 \times 10^{27}\)</span> states and 4<sup>3</sup> has <span class="arithmatex">\(\sim 7.4 \times 10^{45}\)</span> states. <strong>There isn&rsquo;t a single nontrivial 4D puzzle for which God&rsquo;s number is known, let alone remotely possible to compute.</strong></p>
+<p>There are three strategies we can use to estimate it:</p>
+<ol>
+<li>Setting a <strong>lower bound</strong> using the branching factor of move sequences</li>
+<li>Setting an <strong>upper bound</strong> by analyzing the worst-case solution of every stage in a given method</li>
+<li><strong>Estimation</strong> by measuring move counts produced by a near-optimal solver</li>
+</ol>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Puzzle</th>
+<th>Lower Bound</th>
+<th>Upper Bound</th>
+<th>Estimate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2<sup>4</sup></td>
+<td>15 <abbr title="Slice Turn Metric">STM</abbr></td>
+<td>37 <abbr title="Slice Turn Metric">STM</abbr></td>
+<td>~20 ±5</td>
+</tr>
+<tr>
+<td>3<sup>4</sup></td>
+<td>51 <abbr title="Slice Turn Metric">STM</abbr></td>
+<td>570 <abbr title="Slice Turn Metric">STM</abbr></td>
+<td>~125 ±50</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2222">2<span data-replace="&times;">x</span>2<span data-replace="&times;">x</span>2<span data-replace="&times;">x</span>2<a class="headerlink" href="#2222" title="Permanent link">&para;</a></h2>
+<h3 id="lower-bound">Lower bound<a class="headerlink" href="#lower-bound" title="Permanent link">&para;</a></h3>
+<p>We can compute a lower bound of 15 in the <abbr title="Slice Turn Metric">STM</abbr> by computing a bound on the number of positions reachable by algorithms of a certain length.</p>
+<details class="abstract">
+<summary>Derivation</summary>
+<p>Moves here will be measured using <abbr title="Slice Turn Metric">STM</abbr>. Our focus here is on positions that can be reached by algorithms of a certain length. Note that on the 2<sup>4</sup>, we consider one piece fixed when counting permutations. There are <span class="arithmatex">\(\sim 3.4 \times 10^{27}\)</span> positions on the 2<sup>4</sup>.</p>
+<p>One position, the solved position, is reachable without making any moves. There are 23 moves on each of the 4 cells that do not affect the fixed piece, so at most 92 one-move positions are reachable by 1 move. For subsequent moves, there are only 69 non-canceling moves since any move on the same axis as the previous move will cancel. Therefore there are at most <span class="arithmatex">\(92 \times 69^{k-1}\)</span> reachable by exactly <span class="arithmatex">\(k\)</span> moves (where <span class="arithmatex">\(k\ge 1\)</span>). Let <span class="arithmatex">\(P_n\)</span> denote the number of positions reachable in <span class="arithmatex">\(n\)</span> moves or less. Based on the previous analysis,</p>
+<div class="arithmatex">\[P_n \le 1+\sum_{k=1}^n 92 \times 69^{k-1} = \frac{23}{17} (69^n-1)+1.\]</div>
+<p>Let <span class="arithmatex">\(n_G\)</span> be God&rsquo;s number. By definition, <span class="arithmatex">\(P_{n_G}\)</span> must be equal to the total number of positions. Combining this with the bound on <span class="arithmatex">\(P_n\)</span>, we find</p>
+<div class="arithmatex">\[P_{n_G} = 3.4\times 10^{27} \le \frac{23}{17} (69^{n_G}-1)+1,\]</div>
+<p>which implies <span class="arithmatex">\(n_G \ge 15\)</span>.</p>
+</details>
+<h3 id="upper-bound">Upper bound<a class="headerlink" href="#upper-bound" title="Permanent link">&para;</a></h3>
+<p>We can compute an upper bound of 37 in the <abbr title="Slice Turn Metric">STM</abbr> by computing the worst-case move count of a known method.</p>
+<details class="abstract">
+<summary>Derivation</summary>
+<p><a href="https://github.com/ajtaurence/Hypersolve">Hypersolve</a> uses a method that has a worst-case of 39 <abbr title="Slice Turn Metric">STM</abbr>. Furthermore, it has been shown that all cases with move counts more than 37 <abbr title="Slice Turn Metric">STM</abbr> are avoidable. Therefore God&rsquo;s number is at most 37 <abbr title="Slice Turn Metric">STM</abbr>.</p>
+</details>
+<h3 id="estimate">Estimate<a class="headerlink" href="#estimate" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/ajtaurence/Hypersolve">Hypersolve</a> typically produces solutions in the range of 20-30 <abbr title="Slice Turn Metric">STM</abbr>. This solver does not produce optimal solutions<sup id="fnref:optimal"><a class="footnote-ref" href="#fn:optimal">1</a></sup>, but based on its results, God&rsquo;s number for 2<sup>4</sup> is probably not higher than 20-30.</p>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<p>God&rsquo;s number for 2<sup>4</sup> is definitely between 15 and 37 inclusive, and probably around <span class="arithmatex">\(\sim 20 \pm 5\)</span>.</p>
+<div class="admonition question">
+<p class="admonition-title">Could this be improved?</p>
+<ul>
+<li>A better method or lots of compute time might improve slightly on the upper bound. More worst-case scenarios can be checked for avoidability.</li>
+<li>Unless there is some fundamental breakthrough in our understanding of computation, there&rsquo;s likely no way to improve on the lower bound. If you&rsquo;re an expert in quantum computing then perhaps you can devise some clever quantum algorithm to help, but as of 2023 quantum computers haven&rsquo;t solved a single real-world problem faster than a classical computer so we remain skeptical.</li>
+</ul>
+</div>
+<h2 id="3333">3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3<span data-replace="&times;">x</span>3<a class="headerlink" href="#3333" title="Permanent link">&para;</a></h2>
+<h3 id="lower-bound_1">Lower bound<a class="headerlink" href="#lower-bound_1" title="Permanent link">&para;</a></h3>
+<p>We can compute a lower bound of 51 in the <abbr title="Slice Turn Metric">STM</abbr>. This works by showing that algorithms of limited length can generate, at most, only a subset of the possible positions on the 3<sup>4</sup>. We will also demonstrate some known optimizations (often useful for other puzzles), although they do not immediately improve the lower bound in the case of 3<sup>4</sup>.</p>
+<details class="abstract">
+<summary>Lower Bound, <em>Winning Ways</em> Method</summary>
+<p>Turns here are measured in the Slice Turn Metric (<abbr title="Slice Turn Metric">STM</abbr>).</p>
+<p>We can describe turns on the <span class="arithmatex">\(3^4\)</span> as happening on one of four axes, and with one of three layers. Each layer can be turned in 23 ways, so we have <span class="arithmatex">\(4 \times 3 \times 23 = 276\)</span> turns measured as one move in the <abbr title="Slice Turn Metric">STM</abbr>. After turning a layer, we want subsequent turns to be <strong>noncancelling</strong> (turning the same layer twice can be written as a single move), so we have <span class="arithmatex">\(276-23=253\)</span> choices for subsequent turns.</p>
+<p>From here, we can proceed without the <em>Winning Ways</em> improvement, where we find the number of positions reachable by 50 turns or fewer is at most</p>
+<div class="arithmatex">\[1 + 276 \times \sum_{k=0}^{49}253^k \approx 1.57 \times 10^{120} &lt; \frac{\left(24!\times 2^{24}\right) \times \left(32! \times 6^{32}\right) \times (16! \times 12^{16})}{48} \approx 1.78 \times 10^{120}.\]</div>
+<p>This shows there are positions on the <span class="arithmatex">\(3^4\)</span> which require 51 turns or more to solve.
+In the book <em>Winning Ways for Your Mathematical Plays Vol. 4</em>, the authors optimize this argument (as it applies to the Rubik&rsquo;s Cube in the half turn metric) by accounting for relations like <span class="arithmatex">\(LR = RL\)</span>. We can apply a similar optimization for the <span class="arithmatex">\(3^4\)</span>.</p>
+<p>We will refer to the set of possible <em>new</em> positions reachable after <em>exactly</em> <span class="arithmatex">\(n\)</span> turns as <span class="arithmatex">\(T_n\)</span>. &ldquo;New&rdquo; here means that <span class="arithmatex">\(T_n\)</span> does not include positions that were in <span class="arithmatex">\(T_{n-1}\)</span>. &ldquo;Exactly&rdquo; means that positions reachable in more than <span class="arithmatex">\(n\)</span> turns are not in <span class="arithmatex">\(T_n\)</span>. The number of elements in <span class="arithmatex">\(T_n\)</span> is <span class="arithmatex">\(|T_n|\)</span>.</p>
+<p>By the computation from before, there are 276 distinct puzzle states after a single turn. So <span class="arithmatex">\(|T_1|=276\)</span>. Finding <span class="arithmatex">\(|T_2|\)</span> is more complicated. First, we need to setup a more detailed way of describing turning axes.</p>
+<p>A <strong>primary</strong> axis is a line through the core of a puzzle in any of the four cardinal directions. Primary axes have three <strong>layers</strong>, which we might label <span class="arithmatex">\(-1,\ 0,\)</span> and <span class="arithmatex">\(1\)</span>. The white-yellow primary axis&rsquo; three primary layers would correspond to the yellow cell (<span class="arithmatex">\(-y\)</span>), white cell (<span class="arithmatex">\(y\)</span>), and the slice between the white and yellow cells. A \textbf{secondary} axis is a line through the center of a facet and any of the pieces in that facet. Importantly, the secondary axis can be described using a single cardinal direction when it is through a ridge piece (the <span class="arithmatex">\(90^\circ\)</span> degree cell turns and their doubles). A primary axis, secondary axis, and an angle which we turn by is enough to describe any turn in the <abbr title="Slice Turn Metric">STM</abbr>.</p>
+<p>We have just 253 noncancelling choices for a second turn. Some of these second turns <strong>commute</strong> with a first turn, which means we will overcount positions reachable by two algorithms differing by the order of commuting turns. Noncancelling commuting pairs of turns can happen in two ways:</p>
+<ol>
+<li>
+<p>The first and second turns happen in the same primary axis and on different layers (for example, <span class="arithmatex">\(UO\ \ \{2\}UO' = \{2\}UO'\ \ UO\)</span>.\</p>
+</li>
+<li>
+<p>The first turn has primary and secondary axes <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span>, while the second turn has primary and secondary axes <span class="arithmatex">\(b\)</span> and <span class="arithmatex">\(a\)</span>  (for example, <span class="arithmatex">\(OL\ LO= LO\ OL\)</span>).</p>
+</li>
+</ol>
+<p>In describing commuting cases of the first kind, the second turn is one that happens on the same primary axis as the first and on a different layer. There are two other layers, and we can make one of <span class="arithmatex">\(23\)</span> turns on that layer. This means that after a single turn is made, <span class="arithmatex">\(2\times 23 = 46\)</span> of the following turns may lead to commuting cases of the first kind. However, two of these actually lead to single turn puzzle states (like <span class="arithmatex">\(UO\ \{2\}UO = DO\)</span>) which were counted in <span class="arithmatex">\(T_1\)</span> and should not be part of <span class="arithmatex">\(T_2\)</span>. So, only 44 of these turns lead to distinct new puzzle states. This means there are <span class="arithmatex">\(\frac{44\times 276}{2}\)</span> distinct new puzzle states reachable by two commuting moves of this first kind.</p>
+<p>Commuting cases of the second kind can only happen if the first turn&rsquo;s secondary axis goes through a ridge piece. There are <span class="arithmatex">\(108\)</span> turns like this. The second turn&rsquo;s primary/secondary axes are determined by transposing the first turn&rsquo;s primary/secondary axes, and then can happen in one of three ways on one of three layers. So, we have <span class="arithmatex">\(\frac{9\times 108}{2}\)</span> distinct new puzzle states reachable by two commuting moves of this second kind. NOTE: If the first turn is one of the <span class="arithmatex">\(276-108= 168\)</span> other turns that cannot be followed by a commuting turn of the second kind, those nine second turns happen on a different primary axis and will neither cancel nor commute.</p>
+<p>Now we can compute an upper bound on <span class="arithmatex">\(|T_2|\)</span>. There are <span class="arithmatex">\(\frac{44\times 276}{2}\)</span> distinct new puzzle states reachable by two commuting moves of the first kind, and <span class="arithmatex">\(\frac{9\times 108}{2}\)</span> distinct new puzzle states reachable by two commuting moves of the second kind. There are <span class="arithmatex">\(276-23-44-9=200\)</span> noncancelling, noncommuting second turns. In total, we have <span class="arithmatex">\(|T_2| \leq \frac{44\times 276}{2} + \frac{9\times 108}{2} + 9\times 168 + 200\times 276 = 63,270\)</span>. As mentioned in the &ldquo;NOTE&rdquo;, following one of the other 168 first moves (with secondary axis \textit{not} through a ridge piece) with one of those nine turns suggested by commuting case of the second kind will never cancel or commute, so we add <span class="arithmatex">\(9\times 168\)</span> to complement the &ldquo;leftovers&rdquo; that were ignored in the <span class="arithmatex">\(\frac{9\times 108}{2}\)</span> term.</p>
+<p>To complete the argument, we can derive a recurrence relation (more accurately a recurrence estimate) that gives an upper bound on the size of <span class="arithmatex">\(|T_{n+2}|\)</span> in terms of <span class="arithmatex">\(|T_n|\)</span> and <span class="arithmatex">\(|T_{n+1}|\)</span>.</p>
+<p>In the case where the <span class="arithmatex">\(n+2\)</span>th turn will not commute or cancel with the <span class="arithmatex">\(n+1\)</span>th turn, we have at most <span class="arithmatex">\(9\times 168|T_{n}| + 200\times |T_{n+1}|\)</span> possible puzzle states. In the case where the <span class="arithmatex">\(n+2\)</span>th turn \textit{will} commute (but still not cancel) with the <span class="arithmatex">\(n+1\)</span>th turn, we have at most <span class="arithmatex">\(\left(\frac{44\times 253}{2} + \frac{9\times 108}{2}\right)|T_n|\)</span> possible puzzles states. This gives us the estimate <span class="arithmatex">\(|T_{n+2}| \leq 200|T_{n+1}| + 7,582|T_n|.\)</span></p>
+<p>This is an order 2 linear recurrence estimate with constant coefficients. We can show that</p>
+<div class="arithmatex">\[|T_n| \leq A\lambda_1^n + B\lambda_2^n,\]</div>
+<p>where</p>
+<div class="arithmatex">\[
+\begin{array}{c c}
+\lambda_{1}=100+\sqrt{17,582}, &amp; \lambda_{2}=100-\sqrt{17,582}, \\
+A=\displaystyle \frac{4,035}{7,582}+\frac{160,704}{3,791}\sqrt{\frac{2}{8,791}}, &amp;
+B=\displaystyle \frac{4,035}{7,582}-\frac{160,704}{3,791}\sqrt{\frac{2}{8,791}}. \\
+\end{array}
+\]</div>
+<p>Finally, the number of turns reachable by 50 turns or fewer is at most</p>
+<div class="arithmatex">\[1+\sum_{n=1}^{50}|T_n| \leq 2.52\times 10^{118} &lt; \frac{\left(24!\times 2^{24}\right) \times \left(32! \times 6^{32}\right) \times (16! \times 12^{16})}{48} \approx 1.78 \times 10^{120}.\]</div>
+<p>This shows there are positions on the <span class="arithmatex">\(3^4\)</span> which require 51 turns or more to solve.</p>
+<p>Unfortunately, we did not improve the lower bound here. It is worth noting that in the estimate from the beginning (with few optimizations), the actual value of the sum on the LHS is quite close to the number of scrambles possible on the <span class="arithmatex">\(3^4\)</span> (within the same order of magnitude). Compare this to our new estimate, where the sum is bounded above by a number two orders of magnitude smaller than the number of scrambles possible on the <span class="arithmatex">\(3^4\)</span>. So as we would have expected, our improvements do reduce the size of the estimate, just not quite enough to bring down the number of turns derived.</p>
+</details>
+<p>Below is an example of a similar argument used to derive a lower bound of 56 turns in the OBTM. Note that this argument is missing some optimizations that were applied in the <abbr title="Slice Turn Metric">STM</abbr> lower bound derivation.</p>
+<details class="abstract">
+<summary>OBTM Lower Bound, <em>Winning Ways</em> Method</summary>
+<p>Moves here will be measured using something equivalent (as far as this discussion is concerned) to OBTM. Our focus here is on positions that can be reached by algorithms of a certain length. Wide moves contribute to algorithm length in the same way that single cell turns do (wide move = single cell move + cube rotation, where cube rotations count as 0 moves), so we will make a simplification by restricting to single cell turns. There are 23 moves on each of the 8 cells, so 184 one-move algorithms are possible at any given time.</p>
+<p>We know the 3<sup>4</sup> can be scrambled in over 1.7 novemtrigintillion ways. When solving, we have 184 choices for the first turn, and 161 (non cancelling) choices for the following turns. The number of positions reachable by 54 turns or fewer is at most</p>
+<div class="arithmatex">\[1 + 184 \times \sum_{n=0}^{53} 161^n \approx 1.695 \times 10^{119} &lt; 1.757 \times 10^{120}.\]</div>
+<p>This shows that there exist positions on the 3<sup>4</sup> that require 55 or more turns to solve.</p>
+<p>In the book <em>Winning Ways for Your Mathematical Plays Vol. 4</em>, the authors optimize this argument (as it applies to the Rubik&rsquo;s Cube in the half turn metric) by accounting for relations like <span class="arithmatex">\(LR = RL\)</span>. We can apply a similar optimization for the 3<sup>4</sup>.</p>
+<p>We will refer to the number of possible 3<sup>4</sup> positions after <span class="arithmatex">\(n\)</span> moves as <span class="arithmatex">\(u_n\)</span>. It is not too hard to convince ourselves that <span class="arithmatex">\(u_1 = 184\)</span>. After turning one cell, moving the same cell again is what we might call a &ldquo;cancelling move&rdquo;, since the two moves could have been measured as a single move. So, we have <span class="arithmatex">\(161\)</span> non cancelling choices for a second move. We should be able to reduce that <span class="arithmatex">\(161\)</span> further by avoiding double counting positions reachable by two algorithms which differ only by the order of commuting elements.</p>
+<p>There are different ways that a pair of moves can commute on 3<sup>4</sup>. One is by the cell turns affecting completely distinct subsets of pieces, which happens when turning <em>opposite</em> cells, like <span class="arithmatex">\(OL\ IL = IL\ OL\)</span>. This is analogous to the commuting cases on the Rubik&rsquo;s Cube as addressed in <em>Winning Ways</em>. There is at least one more way, which can involve certain adjacent cell moves. <span class="arithmatex">\(OL\ LO = LO\ OL\)</span> is one example. We have not yet reached a description of all commuting cases of this kind. Accounting for these may allow us to further improve the lower bound. For now, we will factor out the commutativities that we <em>can</em> describe, which we will call &ldquo;opposite-commuting&rdquo; moves.</p>
+<p>First, there are <span class="arithmatex">\(161-23 = 138\)</span> possible non-cancelling, <em>non-opposite-commuting</em> choices for the second move. We&rsquo;ll add the opposite-commuting cases separately.</p>
+<p>There are four &ldquo;flavors&rdquo; of opposite-commuting cases: I cell moves with O cell moves, R moves with L moves, U moves with D moves, and B moves with F moves. In any of these, choose any one of the 23 moves possible on each cell (order doesn&rsquo;t matter), so there are <span class="arithmatex">\(23 \times 23 = 529\)</span> opposite-commuting cases of each flavor. Then across the four flavors, we have <span class="arithmatex">\(529\times 4 = 2,116\)</span> distinct cases after the second move, when it opposite-commuted with the first. So we have that the number of <span class="arithmatex">\(3^4\)</span> positions after <span class="arithmatex">\(n\)</span> moves is <em>at most</em>  <span class="arithmatex">\(138u_1 + 2,116 = 27,508\)</span>. That is, we can say <span class="arithmatex">\(u_2 \leq 27,508\)</span>.</p>
+<p>As a sanity check, we could note at this point the <span class="arithmatex">\(27,508\)</span> positions after two turns is better than the <span class="arithmatex">\(184\times 161 = 29,624\)</span> positions we would have estimated without accounting for opposite-commutativity of two successive turns here.</p>
+<p>To complete the argument, we can derive a recurrence relation (more accurately a recurrence <em>estimate</em>) that gives us an upper bound on the size of <span class="arithmatex">\(u_{n+2}\)</span> in terms of <span class="arithmatex">\(u_n\)</span> and <span class="arithmatex">\(u_{n+1}\)</span></p>
+<p>In the case where the <span class="arithmatex">\(n+2\)</span>th move will <em>not</em> opposite-commute (or cancel) with the <span class="arithmatex">\(n+1\)</span>th move, we have <span class="arithmatex">\(138u_{n+1}\)</span> possible puzzle states. If the <span class="arithmatex">\(n+2\)</span>th move <em>is</em> going to opposite-commute with the <span class="arithmatex">\(n+1\)</span>th move, we might have <span class="arithmatex">\(529\times 4 = 2,116\)</span> cases to follow up the <span class="arithmatex">\(n\)</span>th move. However, one of those four flavors of opposite commuting cases would have cancelled with the <span class="arithmatex">\(n\)</span>th move, so this time we only have <span class="arithmatex">\(529 \times 3 = 1,587\)</span> cases to follow the <span class="arithmatex">\(n\)</span>th move. This gives us the recurrence estimate <span class="arithmatex">\(u_{n+2} \leq 138u_{n+1} + 1,587u_{n}\)</span>.</p>
+<p>Note that as we have defined it, <span class="arithmatex">\(u_n\)</span> is the number of positions accessible by <em>exactly</em> <span class="arithmatex">\(n\)</span> moves. If we <em>sum</em> the <span class="arithmatex">\(u_n\)</span>s from 1 to <span class="arithmatex">\(N\)</span>, that will gives us (an upper bound on) the number of positions accessible by <span class="arithmatex">\(n\)</span> moves <em>or fewer</em>.</p>
+<p>In this case, our recurrence estimate is an order 2 linear recurrence with constant coefficients. There exists a method to derive a general formula for <span class="arithmatex">\(u_n\)</span>. In the end, we find</p>
+<div class="arithmatex">\[u_n = C\lambda_1^n + D\lambda_2^n,\]</div>
+<p>where</p>
+<div class="arithmatex">\[
+\begin{array}{c c}
+\lambda_{1}=69+46\sqrt{3}, &amp; \lambda_{2}=69-46\sqrt{3}, \\
+C=\displaystyle \frac{1}{4}\left(-22+13\sqrt{3}\right), &amp; D=\displaystyle \frac{1}{4}\left(-22-13\sqrt{3}\right). \\
+\end{array}
+\]</div>
+<p>Finally, the number of positions reachable by 55 turns or fewer is at most</p>
+<div class="arithmatex">\[1\ +\ \sum_{n=1}^{55}u_n \approx 3.865 \times 10^{118} &lt; 1.757 \times 10^{120}.\]</div>
+<p>This shows that there exist positions on the <span class="arithmatex">\(3^4\)</span> that require 56 or more turns to solve.</p>
+<p>We should address the other side of the inequality,</p>
+<div class="arithmatex">\[1.757 \times 10^{120} &lt;1\ +\ \sum_{n=1}^{56}u_n \approx 5.746 \times 10^{120}.\]</div>
+<p>So, the argument as applied here can&rsquo;t necessarily show that there are positions requiring 57 or more turns to solve.</p>
+</details>
+<h3 id="upper-bound_1">Upper bound<a class="headerlink" href="#upper-bound_1" title="Permanent link">&para;</a></h3>
+<p>Hactar computed a generous upper bound of 570 <abbr title="Slice Turn Metric">STM</abbr> using <abbr title="Cross, F2L, OLL, PLL">CFOP</abbr>.</p>
+<details class="abstract">
+<summary>Step-by-step breakdown</summary>
+<ul>
+<li>cross: 6 pieces x 4 <abbr title="Slice Turn Metric">STM</abbr> per piece = <strong>24 <abbr title="Slice Turn Metric">STM</abbr></strong></li>
+<li><abbr title="2c+3c pairs">F2L-a</abbr>: 12 pairs x 13 <abbr title="Slice Turn Metric">STM</abbr> per pair = <strong>156 <abbr title="Slice Turn Metric">STM</abbr></strong><ul>
+<li>3 <abbr title="Slice Turn Metric">STM</abbr> to put corner on I (with corner first-cell color not on I)</li>
+<li>3 <abbr title="Slice Turn Metric">STM</abbr> to put edge on I</li>
+<li>3 <abbr title="Slice Turn Metric">STM</abbr> to pair + 2 <abbr title="Slice Turn Metric">STM</abbr> to fix RKT debt</li>
+<li>4 <abbr title="Slice Turn Metric">STM</abbr> to insert</li>
+</ul>
+</li>
+<li><abbr title="3c+4c pairs">F2L-b</abbr>: 8 pairs x 26 <abbr title="Slice Turn Metric">STM</abbr> per pair = <strong>208 <abbr title="Slice Turn Metric">STM</abbr></strong><ul>
+<li>6 <abbr title="Slice Turn Metric">STM</abbr> to put corner on I (with corner first-cell color not on I)</li>
+<li>6 <abbr title="Slice Turn Metric">STM</abbr> to put edge on I</li>
+<li>4 RKT = 7 <abbr title="Slice Turn Metric">STM</abbr> to pair them and fix RKT debt</li>
+<li>7 <abbr title="Slice Turn Metric">STM</abbr> to insert</li>
+</ul>
+</li>
+<li>ridge <abbr title="Orientation of the Last Cell">OLC</abbr>: worst case (all ridges bad) is <strong>17 <abbr title="Slice Turn Metric">STM</abbr></strong></li>
+<li>edge <abbr title="Orientation of the Last Cell">OLC</abbr>:<ul>
+<li>solve at least 3/4 pieces in each slice using <a href="https://www.speedsolving.com/wiki/index.php?title=OLL#All_edges_flipped_correctly"><abbr title="Corner Orientation of the Last Layer (preserves edge orientation)">OCLL</abbr></a>: 3 slices x 11 <abbr title="Slice Turn Metric">STM</abbr> = <strong>33 <abbr title="Slice Turn Metric">STM</abbr></strong></li>
+<li>worst case is 3 unsolved edges remaining: 5 RKT + 9 <abbr title="Slice Turn Metric">STM</abbr> = <strong>18 <abbr title="Slice Turn Metric">STM</abbr></strong><ul>
+<li>2 RKT to arrange any two edges so that they are adjacent in the same slice but do not form a valid 2-corner <abbr title="Orientation of the Last Layer">OLL</abbr> case</li>
+<li>2 RKT to place the last edge in a way that forms a valid 3-corner <abbr title="Orientation of the Last Layer">OLL</abbr> case</li>
+<li>1 RKT to fix RKT debt</li>
+<li>9 <abbr title="Slice Turn Metric">STM</abbr> to solve the <abbr title="Orientation of the Last Layer">OLL</abbr> case (consider OCLLs with at least one corner solved)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>corner <abbr title="Orientation of the Last Cell">OLC</abbr>: <strong>58 <abbr title="Slice Turn Metric">STM</abbr></strong><ul>
+<li>11 RKT = 23 <abbr title="Slice Turn Metric">STM</abbr> to solve a 2^3 into a state where the D and U layer each contains a valid 3-corner <abbr title="Orientation of the Last Cell">OLC</abbr> case<ul>
+<li>if there is exactly one remaining corner unsolved, then misorient two corners when solving one of those 3-corner <abbr title="Orientation of the Last Cell">OLC</abbr> cases.</li>
+<li>if there are exactly two remaining corners unsolved, then misorient one corner when solving one of the 3-corner <abbr title="Orientation of the Last Cell">OLC</abbr> cases.</li>
+<li>arrange the cases so that the 3 unsolved corners left will form a sune</li>
+</ul>
+</li>
+<li>13 <abbr title="Slice Turn Metric">STM</abbr> to solve each <abbr title="Orientation of the Last Layer">OLL</abbr> case on U/D using RKT cancels (worst case is double antisune)</li>
+<li>9 <abbr title="Slice Turn Metric">STM</abbr> to solve the remaining sune case</li>
+</ul>
+</li>
+<li>ridge <abbr title="Permutation of the Last Cell">PLC</abbr>: <strong>14 <abbr title="Slice Turn Metric">STM</abbr></strong> (2<span data-replace="&times;">x</span> U perm in the worst case)</li>
+<li><abbr title="Permutation of the Last Cell">PLC</abbr>: <strong>42 <abbr title="Slice Turn Metric">STM</abbr></strong><ul>
+<li>solve a 3^3 using God&rsquo;s algorithm in 20 moves</li>
+<li>adjust I cell to solve</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="estimate_1">Estimate<a class="headerlink" href="#estimate_1" title="Permanent link">&para;</a></h2>
+<p>We do not have a near-optimal 3<sup>4</sup> solver. Good <abbr title="Fewest Moves Competition">FMC</abbr> speedsolves average 200 <abbr title="Slice Turn Metric">STM</abbr>, so God&rsquo;s number is probably lower than that.</p>
+<h2 id="conclusion_1">Conclusion<a class="headerlink" href="#conclusion_1" title="Permanent link">&para;</a></h2>
+<p>God&rsquo;s number for 3<sup>4</sup> is definitely between 56 and 570 inclusive, and probably <span class="arithmatex">\(\sim 125 \pm 50\)</span><sup>[citation needed]</sup>.</p>
+<div class="admonition question">
+<p class="admonition-title">Could this be improved?</p>
+<ul>
+<li>A better method could easily improve the upper bound, probably to around 300<sup>[citation needed]</sup>.</li>
+<li>A better manual computation could give a slightly better lower bound.</li>
+<li>An automated 3<sup>4</sup> solver or search program could give a much better estimate.</li>
+</ul>
+</div>
+<!-- n^4 piece types -->
+<!-- 4D stages and alg sets -->
+<!-- 3D stages and alg sets -->
+<!-- 3D methods -->
+<!-- Software -->
+<!-- Turn metrics -->
+<!-- Misc. -->
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:optimal">
+<p>It does eventually converge on optimal solutions when run for a sufficient amount of time, but this amount of time is impractical for all but the simplest scrambles.&#160;<a class="footnote-backref" href="#fnref:optimal" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Hypercubers" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/xxFvfyx89p" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "content.action.edit", "content.code.copy", "navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/symbol_replace.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
